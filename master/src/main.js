@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
+/**
+ * 统一引入的外部插件、样式、服务等
+ */
+import './core/install'
+import {vueRender} from "./core/render"
 
-Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+vueRender({},true)
