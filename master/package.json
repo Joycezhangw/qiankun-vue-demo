@@ -1,6 +1,5 @@
 {
   "name": "master",
-  "port": 8081,
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,10 +18,14 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-router": "^4.4.1",
+    "@vue/cli-plugin-vuex": "^4.4.1",
     "@vue/cli-service": "~4.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.11.2",
+    "less-loader": "^6.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -43,5 +46,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "port": 8081
 }
