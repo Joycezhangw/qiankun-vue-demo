@@ -1,0 +1,53 @@
+@import "./reset.css";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+.app-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.app-result {
+    padding: 48px 32px;
+    &-icon {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    &-image {
+      width: 250px;
+      height: 295px;
+      margin: auto;
+    }
+    &-title {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 24px;
+      line-height: 1.8;
+      text-align: center;
+    }
+    &-subtitle {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    &-extra {
+        margin: 32px 0 0;
+        text-align: center;
+      }
+  }
