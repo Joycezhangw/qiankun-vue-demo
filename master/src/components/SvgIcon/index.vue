@@ -6,7 +6,7 @@
     v-on="$listeners"
   ></div>
   <svg v-else :class="svgClass" aria-hidden="true" v-on="$listeners">
-    <use :xlink:href="iconName" />
+    <use :xlink:href="svgName" />
   </svg>
 </template>
 <script>
@@ -14,7 +14,7 @@ import { isExternal } from "@/utils/validate";
 export default {
   name: "SvgIcon",
   props: {
-    iconClass: {
+    iconName: {
       type: String,
       required: true
     },
@@ -25,10 +25,10 @@ export default {
   },
   computed: {
     isExternal() {
-      return isExternal(this.iconClass);
+      return isExternal(this.iconName);
     },
-    iconName() {
-      return `#icon-${this.iconClass}`;
+    svgName() {
+      return `#icon-${this.iconName}`;
     },
     svgClass() {
       if (this.className) {
@@ -39,8 +39,8 @@ export default {
     },
     styleExternalIcon() {
       return {
-        mask: `url(${this.iconClass}) no-repeat 50% 50%`,
-        "-webkit-mask": `url(${this.iconClass}) no-repeat 50% 50%`
+        mask: `url(${this.iconName}) no-repeat 50% 50%`,
+        "-webkit-mask": `url(${this.iconName}) no-repeat 50% 50%`
       };
     }
   }
