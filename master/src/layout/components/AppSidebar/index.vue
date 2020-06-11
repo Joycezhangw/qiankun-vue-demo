@@ -135,7 +135,7 @@ export default {
     }
     .sider-menu-logo {
       position: relative;
-      padding: 0 24px;
+      padding: 0 16px;
       overflow: hidden;
       background: @layout-sidebar-background-color;
       cursor: pointer;
@@ -166,10 +166,10 @@ export default {
     }
   }
   &--minimized {
-    flex: 0 0 80px;
-    max-width: 80px;
-    min-width: 80px;
-    width: 80px;
+    flex: 0 0 @layout-sidebar-min-width;
+    max-width: @layout-sidebar-min-width;
+    min-width: @layout-sidebar-min-width;
+    width: @layout-sidebar-min-width;
     /** 折叠侧边栏，隐藏掉一级菜单的文字和向上向下的图标 */
     .el-submenu > .el-submenu__title > span {
       height: 0;
