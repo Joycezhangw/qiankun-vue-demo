@@ -39,6 +39,26 @@ export const constantRoutes = [
       },
     ],
   }, {
+    path: "/about",
+    component: Layout,
+    redirect: "noRedirect",
+    name: "About",
+    meta: { title: "关于我们", icon: "copyright" },
+    children: [
+      {
+        path: "/himall",
+        name: "himall",
+        component: () => import("@/pages/about/index"),
+        meta: { title: "关于himall" },
+      },
+      {
+        path: "/about",
+        name: "about",
+        component: () => import("@/pages/about/about"),
+        meta: { title: "about" },
+      }
+    ]
+  }, {
     path: "/error",
     component: EmptyLayout,
     redirect: "noRedirect",
