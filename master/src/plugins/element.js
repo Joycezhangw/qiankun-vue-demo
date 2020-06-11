@@ -1,8 +1,9 @@
 import DataType from "@/library/utils/dataType"
 import {
-    Button, Menu, Submenu, Input, MenuItem, MenuItemGroup, Scrollbar, Loading, Message, MessageBox, Container, Header,
-    Aside,
-    Main,
+    Button, Menu, Submenu, Input, MenuItem, MenuItemGroup, Scrollbar, Loading, Message, MessageBox, Avatar, Badge, Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Breadcrumb
 } from "element-ui"
 
 /**
@@ -31,9 +32,11 @@ export function ElConfirm(msg, title = "提示", options = {}) {
 
 export default {
     components: [
-        Button, Menu, Submenu, MenuItem, MenuItemGroup, Scrollbar, Input, Container, Header,
-        Aside,
-        Main,
+        Button, Menu, Submenu, MenuItem, MenuItemGroup, Scrollbar, Input, Badge,
+        Avatar, Dropdown,
+        DropdownMenu,
+        DropdownItem,
+        Breadcrumb
     ],
     serve: [Loading],
     methods: [ElMessage, ElConfirm]
