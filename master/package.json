@@ -1,6 +1,7 @@
 {
   "name": "master",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "joycezhang",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,6 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dayjs": "^1.8.28",
     "element-ui": "^2.13.2",
     "mockjs": "^1.1.0",
     "vue": "^2.6.11",
@@ -26,8 +28,10 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.11.2",
     "less-loader": "^6.1.0",
+    "style-resources-loader": "^1.3.3",
     "svg-sprite-loader": "^5.0.0",
     "svgo": "^1.3.2",
+    "vue-cli-plugin-style-resources-loader": "^0.1.4",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -48,6 +52,5 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "port": 8081
+  ]
 }
