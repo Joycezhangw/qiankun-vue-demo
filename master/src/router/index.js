@@ -52,8 +52,8 @@ export const constantRoutes = [
         meta: { title: "关于himall" },
       },
       {
-        path: "/about",
-        name: "about",
+        path: "/aboutf",
+        name: "aboutf",
         component: () => import("@/pages/about/about"),
         meta: { title: "about" },
       }
