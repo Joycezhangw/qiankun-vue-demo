@@ -13,6 +13,7 @@
     "dayjs": "^1.8.28",
     "element-ui": "^2.13.2",
     "mockjs": "^1.1.0",
+    "path-to-regexp": "^6.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.3.1",
     "vuex": "^3.4.0"
