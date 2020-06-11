@@ -1,13 +1,20 @@
 <template>
   <header class="app-header" :class="[!minimized?'fix-header':'fix-min-header']">
-    <span class="app-header__trigger" @click="$emit('update:minimized', !minimized)">
-      <span role="img" class="anticon" v-if="!minimized">
-        <svg-icon icon-name="menu-fold" class-name="menu-fold" />
+    <div class="left-panel">
+      <span
+        class="app-header__trigger"
+        @click="$emit('update:minimized', !minimized)"
+        :title="minimized ? '展开' : '收起'"
+      >
+        <span role="img" class="anticon" v-if="!minimized">
+          <svg-icon icon-name="menu-fold" class-name="menu-fold" />
+        </span>
+        <span role="img" class="anticon" v-if="minimized">
+          <svg-icon icon-name="menu-unfold" class-name="menu-fold" />
+        </span>
       </span>
-      <span role="img" class="anticon" v-if="minimized">
-        <svg-icon icon-name="menu-unfold" class-name="menu-fold" />
-      </span>
-    </span>
+      <breadcrumb />
+    </div>
     <div style="flex: 1 1 0%;"></div>
     <div class="app-header__right">
       <el-dropdown class="avatar-container" trigger="click">
@@ -37,8 +44,12 @@
   </header>
 </template>
 <script>
+import Breadcrumb from "@/components/Breadcrumb";
 export default {
   name: "AppHeader",
+  components: {
+    Breadcrumb
+  },
   props: {
     minimized: {
       type: Boolean,
@@ -52,18 +63,25 @@ export default {
   position: relative;
   display: flex;
   align-items: center;
-  height: 64px;
+  height: @layout-header-height;
   padding: 0;
   color: rgba(0, 0, 0, 0.65);
-  line-height: 64px;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   .menu-fold {
     width: 1em;
     height: 1em;
   }
+  .left-panel {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: @layout-header-height;
+    max-height: @layout-header-height;
+  }
   &__trigger {
-    height: 64px;
+    height: @layout-header-height;
+    line-height: 56px;
     padding: 0 24px;
     font-size: 20px;
     cursor: pointer;
