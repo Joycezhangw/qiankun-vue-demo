@@ -3,7 +3,8 @@ import {
     Button, Menu, Submenu, Input, MenuItem, MenuItemGroup, Scrollbar, Loading, Message, MessageBox, Avatar, Badge, Dropdown,
     DropdownMenu,
     DropdownItem,
-    Breadcrumb
+    Breadcrumb,
+    BreadcrumbItem
 } from "element-ui"
 
 /**
@@ -36,7 +37,8 @@ export default {
         Avatar, Dropdown,
         DropdownMenu,
         DropdownItem,
-        Breadcrumb
+        Breadcrumb,
+        BreadcrumbItem
     ],
     serve: [Loading],
     methods: [ElMessage, ElConfirm]
