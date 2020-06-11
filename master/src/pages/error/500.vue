@@ -1,9 +1,9 @@
 <template>
   <div class="app-result app-result-500">
     <div class="app-result-icon app-result-image">
-      <svg-icon icon-class="500-page" class-name="error-500" />
+      <svg-icon icon-name="500-page" class-name="error-500" />
     </div>
-    <div class="app-result-title">403</div>
+    <div class="app-result-title">500</div>
     <div class="app-result-subtitle">抱歉，服务器报告错误。</div>
     <div class="app-result-extra">
       <a href="/">
