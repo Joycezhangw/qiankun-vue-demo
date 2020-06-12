@@ -19,18 +19,18 @@ function render(props = {}) {
     // hash模式不需要上面两行
     routes,
   });
-
+  console.log('[subapp-test] 主应用传递 props',props)
   instance = new Vue({
     router,
     store,
     render: h => h(App),
     data(){
       return {
-        parentRouter: parent.router,
-        parentVuex: parent.store,
+        parentRouter: props.data.router,
+        parentVuex: props.data.store,
       }
     },
-  }).$mount(container ? container.querySelector('#app') : '#app');
+  }).$mount(container ? container.querySelector('#subAppTest') : '#subAppTest');
 }
 //全局变量来判断环境，独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
