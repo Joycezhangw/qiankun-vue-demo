@@ -36,7 +36,6 @@ export default {
   width: 100%;
   overflow: hidden;
   padding: 24px;
-  background-color: #fff;
 
   .footer-copyright {
     min-height: 55px;
