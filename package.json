@@ -3,6 +3,7 @@
     "version":"1.0.0",
     "private":true,
     "scripts":{
-        "hm-install-all":"node bin/install.js npm"
+        "hm-install-all":"node bin/install.js npm",
+        "hm-serve-all":"node bin/start.js"
     }
 }
