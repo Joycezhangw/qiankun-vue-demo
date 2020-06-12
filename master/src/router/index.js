@@ -59,7 +59,7 @@ export const constantRoutes = [
       }
     ]
   }, {
-    path: "/subapp-test",
+    path: "/subapp-test",//测试子应用路由
     component: Layout,
     redirect: "noRedirect",
     name: "subapp-test",
