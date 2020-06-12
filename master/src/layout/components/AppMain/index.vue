@@ -7,7 +7,7 @@
       <router-view style="min-height:90.6vh" />
     </transition>
     <transition name="fade-transform" mode="out-in">
-        <div id="appContainer"></div>
+        <div id="appContainer" style="min-height:90.6vh"></div>
     </transition>
     <footer class="footer-copyright">
       Copyright
@@ -36,6 +36,7 @@ export default {
   width: 100%;
   overflow: hidden;
   padding: 24px;
+  background-color: #fff;
 
   .footer-copyright {
     min-height: 55px;
