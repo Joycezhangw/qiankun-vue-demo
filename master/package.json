@@ -2,6 +2,7 @@
   "name": "master",
   "version": "1.0.0",
   "author": "joycezhang",
+  "devPort":"8081",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

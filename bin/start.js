@@ -24,12 +24,12 @@ function start() {
         }
         let packageJson = fs.readFileSync(`${i}/package.json`).toString();
         let packageData = JSON.parse(packageJson);
-        console.log(`[${i}] 开始启动... 端口：${packageData.port} 全部启动需要时间，请稍加等候，或刷新浏览器即可`)
+        console.log(`[${i}] 开始启动... 端口：${packageData.devPort} 全部启动需要时间，请稍加等候，或刷新浏览器即可`)
         await exec('npm run serve', { cwd: path.resolve(i), maxBuffer: maxBufferLength });
     });
     const packageJson = fs.readFileSync('master/package.json').toString();
     const packageData = JSON.parse(packageJson);
-    exec(`start http://localhost:${packageData.port}`);
+    exec(`start http://localhost:${packageData.devPort}`);
 }
 start();
 

@@ -1,6 +1,7 @@
 {
   "name": "subapp-test",
   "version": "0.1.0",
+  "devPort":"8082",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
