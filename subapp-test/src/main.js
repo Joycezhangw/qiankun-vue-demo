@@ -19,15 +19,15 @@ function render(props = {}) {
     // hash模式不需要上面两行
     routes,
   });
-  console.log('[subapp-test] 主应用传递 props',props)
+  console.log('[subapp-test] 主应用传递 props', props)
   instance = new Vue({
     router,
     store,
     render: h => h(App),
-    data(){
+    data() {
       return {
-        parentRouter: props.data.router,
-        parentVuex: props.data.store,
+        parentRouter: props.data ? props.data.router : {},
+        parentVuex: props.data ? props.data.store : {},
       }
     },
   }).$mount(container ? container.querySelector('#subAppTest') : '#subAppTest');

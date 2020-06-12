@@ -1,4 +1,5 @@
 const path = require('path');
+//这个 name 默认从 package.json 获取，可以自定义，只要和父项目注册时的 name 保持一致即可。
 const { name } = require('./package');
 const {
     assetsDir,
