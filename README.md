@@ -10,6 +10,7 @@
 
 `vue` `qiankun`
 
+### 运行和打包
 
 #### 安装微应用依赖教程
 
@@ -22,3 +23,7 @@
 #### 打包所有项目
 
 `npm run hm-build-all`
+
+您也可以使用 `npm-run-all` 插件来实现：一个命令，运行所有项目，该插件要在`根目录下`创建`package.json`然后进行`npm install npm-run-all --save-dev`
+
+[npm-run-all 开源地址，文档](https://github.com/mysticatea/npm-run-all)
