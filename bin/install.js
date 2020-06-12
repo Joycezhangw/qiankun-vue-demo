@@ -1,3 +1,6 @@
+/**
+ * 安装所有微应用依赖
+ */
 const fs = require('fs')
 const path = require('path')
 const util = require('util')

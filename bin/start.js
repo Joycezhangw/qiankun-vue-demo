@@ -1,3 +1,6 @@
+/**
+ * 启动所有微应用开发环境下服务
+ */
 const fs = require('fs')
 const path = require('path')
 const util = require('util')
@@ -6,7 +9,7 @@ const sub_app_path = path.resolve();
 
 const sub_apps = fs.readdirSync(sub_app_path).filter(i => /^master|subapp/.test(i));
 
-console.info(`[hm-install-all]即将将进入所有模块并启动服务：${JSON.stringify(sub_apps)} ing...`)
+console.info(`[hm-install-all] 即将进入所有模块并启动服务：${JSON.stringify(sub_apps)} ing...`)
 
 const exec = util.promisify(require('child_process').exec);
 

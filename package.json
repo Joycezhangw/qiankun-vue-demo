@@ -4,6 +4,7 @@
     "private":true,
     "scripts":{
         "hm-install-all":"node bin/install.js npm",
-        "hm-serve-all":"node bin/start.js"
+        "hm-serve-all":"node bin/start.js",
+        "hm-build-all":"node bin/build.js"
     }
 }
