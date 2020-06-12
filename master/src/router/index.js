@@ -59,6 +59,24 @@ export const constantRoutes = [
       }
     ]
   }, {
+    path: "/subapp-test",
+    component: Layout,
+    redirect: "noRedirect",
+    name: "subapp-test",
+    meta: { title: "qiankun子应用", icon: "copyright" },
+    children: [
+      {
+        path: "/subapp-test/index",
+        name: "首页",
+        meta: { title: "首页" },
+      },
+      {
+        path: "/subapp-test/about",
+        name: "about",
+        meta: { title: "关于我们" },
+      }
+    ]
+  }, {
     path: "/error",
     component: EmptyLayout,
     redirect: "noRedirect",

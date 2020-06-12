@@ -6,6 +6,9 @@
       <!-- </keep-  alive> -->
       <router-view style="min-height:90.6vh" />
     </transition>
+    <transition name="fade-transform" mode="out-in">
+        <div id="appContainer"></div>
+    </transition>
     <footer class="footer-copyright">
       Copyright
       <svg-icon icon-name="copyright" />
