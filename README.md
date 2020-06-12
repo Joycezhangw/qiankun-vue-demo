@@ -19,4 +19,8 @@
 
 `npm run hm-serve-all`
 
+#### 打包所有项目
+
+`npm run hm-build-all`
+
 
