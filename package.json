@@ -1,0 +1,8 @@
+{
+    "name":"hm-micro",
+    "version":"1.0.0",
+    "private":true,
+    "scripts":{
+        "hm-install-all":"node bin/install.js npm"
+    }
+}
