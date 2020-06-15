@@ -6,5 +6,11 @@
         "hm-install-all":"node bin/install.js npm",
         "hm-serve-all":"node bin/start.js",
         "hm-build-all":"node bin/build.js"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitee.com/joycezhang/hmall-micro.git"
+      },
+      "author": "joycezhang",
+      "license": "ISC"
 }
