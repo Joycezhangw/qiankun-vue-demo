@@ -1,10 +1,9 @@
 ### 项目介绍
 
-使用 `qiankun` 来实现 `vue` 技术栈的微前端服务
-
-主应用和子应用都是使用 `history` 路由模式
-
-该项目所有，都使用 `vue-cli 4` 下创建的`vue`项目，单独运行项目命令，请参照 [Vue CLI 官方文档](https://cli.vuejs.org/zh/guide/prototyping.html)
+- 使用 `qiankun` 来实现 `vue` 技术栈的微前端服务
+- 主应用和子应用都是使用 `history` 路由模式
+- 主应用不仅只是`微前端`的基座，它也有自己的业务承载，实现在主应用自己的页面和子应用的页面自由跳转
+- 主/子应用，都是使用 `vue-cli 4` 下创建的`vue`项目，单独运行项目命令，请参照 [Vue CLI 官方文档](https://cli.vuejs.org/zh/guide/prototyping.html)
 
 ### 目录结构
 
