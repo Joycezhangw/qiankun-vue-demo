@@ -1,4 +1,4 @@
-#### 项目介绍
+### 项目介绍
 
 使用 `qiankun` 来实现 `vue` 技术栈的微前端服务
 
@@ -6,7 +6,7 @@
 
 该项目所有，都使用 `vue-cli 4` 下创建的`vue`项目，单独运行项目命令，请参照 [Vue CLI 官方文档](https://cli.vuejs.org/zh/guide/prototyping.html)
 
-#### 目录结构
+### 目录结构
 
 ```
 ├─bin                                整个项目的打包，运行执行目录
@@ -56,3 +56,13 @@
 您也可以使用 `npm-run-all` 插件来实现：一个命令，运行所有项目，该插件要在`根目录下`创建`package.json`然后进行`npm install npm-run-all --save-dev`
 
 [npm-run-all 开源地址，文档](https://github.com/mysticatea/npm-run-all)
+
+### 说明
+
+更多关于`qiankun`实践文章，请看[作者：沉末_ qiankun 微前端方案实践及总结](https://juejin.im/post/5ed73b73e51d4578724e3fa4?from=groupmessage)
+
+
+### 感谢
+
+- 沉末_ [github](https://github.com/gongshun)
+- wl项目旨在通过架构设计提供最优的项目工程实践 [wl-ui](https://github.com/wl-ui)
