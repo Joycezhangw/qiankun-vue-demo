@@ -19,6 +19,15 @@ function render(props = {}) {
     // hash模式不需要上面两行
     routes,
   });
+  // if(window.__POWERED_BY_QIANKUN__){
+  //   router.beforeEach((to,from,next)=>{
+  //     if(!to.path.includes('subapp-test')){
+  //       next({
+  //         path:"/subapp-test/"+packin
+  //       })
+  //     }
+  //   })
+  // }
   console.log('[subapp-test] 主应用传递 props', props)
   instance = new Vue({
     router,
