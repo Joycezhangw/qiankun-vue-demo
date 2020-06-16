@@ -1,6 +1,8 @@
 module.exports = {
     //部署时的URL
-    publicPath: "",
+    //publicPath:"./" hash模式打包
+    //publicPath:"/" history模式打包
+    publicPath: process.env.BASE_URL,
     //生产环境构建文件的目录名
     outputDir: "dist",
     // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。

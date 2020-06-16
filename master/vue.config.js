@@ -1,7 +1,6 @@
 'use strict'
 const path = require('path')
-const { publicPath,
-    assetsDir,
+const { publicPath, assetsDir,
     outputDir,
     lintOnSave,
     devPort,
@@ -16,8 +15,10 @@ process.env.VUE_APP_VERSION = version;
 function resolve(dir) {
     return path.join(__dirname, dir)
 }
-
 module.exports = {
+    //部署时的URL，如果为空，或者 以下跟路由不匹配的，在手动刷新子应用路由的时候，就无法正常加载应用
+    //publicPath:"./" hash模式打包
+    //publicPath:"/" history模式打包
     publicPath,
     assetsDir,
     outputDir,
@@ -25,7 +26,7 @@ module.exports = {
     devServer: {
         /* 自动打开浏览器 */
         open: true,
-        // host: '0.0.0.0',
+        host: '0.0.0.0',
         hot: true,
         disableHostCheck: true,
         port: devPort,
@@ -37,7 +38,9 @@ module.exports = {
             'Access-Control-Allow-Origin': '*',
         }
     },
+    transpileDependencies: ['single-spa', 'qiankun'],
     chainWebpack(config) {
+        config.resolve.alias.set('./patchers', path.resolve(__dirname, 'src/assets/patchers.js'))
         //分包
         config.optimization.splitChunks({
             chunks: "all",
