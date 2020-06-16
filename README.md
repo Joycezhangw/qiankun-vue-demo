@@ -10,11 +10,11 @@
 
 ```
 ├─bin                                整个项目的打包，运行执行目录
+│  ├─install.js                      安全所有项目依赖
+│  ├─start.js                        启动dev项目
+│  └─build.js                        打包所有项目
+| 
 ├─master                             主应用
-│  ├─api                              api接口模块目录
-│  ├─manage                           后台管理目录
-│  ├─middleware                       http中间件目录
-│  ├─Providers                        容器服务提供者
 │  ├─src               
 │  │  ├─config                        项目配置目录
 │  │  ├─core                          项目初始化目录
