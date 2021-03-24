@@ -40,7 +40,6 @@ module.exports = {
     },
     transpileDependencies: ['single-spa', 'qiankun'],
     chainWebpack(config) {
-        config.resolve.alias.set('./patchers', path.resolve(__dirname, 'src/assets/patchers.js'))
         //分包
         config.optimization.splitChunks({
             chunks: "all",
