@@ -9,7 +9,7 @@
 
 ```
 ├─bin                                整个项目的打包，运行执行目录
-│  ├─install.js                      安全所有项目依赖
+│  ├─install.js                      安装所有项目依赖
 │  ├─start.js                        启动dev项目
 │  └─build.js                        打包所有项目
 | 
